@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/game.css">
+    <title>Duck Hunt with Ron</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="./index.html">VGBC</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class ="nav navbar-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./work.html">Previous Projects</a></li>
+                <li><a href="./words.html">Words From Our Founder</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li class="active"><a href="./game.html">Hunt with Ron</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="./help.html">Help</a></li>
+        </ul>
+        </div>
+    </nav>
+    <container id = "try" class="try">
+        <input type="checkbox" id="duck1" name="duck">
+    <label for="duck1" class="duck" onclick="showModal()"></label>
+
+    <input type="checkbox" id="duck2" name="duck">
+    <label for="duck2" class="duck"></label>
+
+    <input type="checkbox" id="duck3" name="duck">
+    <label for="duck3" class="duck"></label>
+
+    <input type="checkbox" id="duck4" name="duck">
+    <label for="duck4" class="duck"></label>
+
+    <input type="checkbox" id="duck5" name="duck">
+    <label for="duck5" class="duck"></label>
+    <script type="text/javascript" src="./scripts/game.js"></script>
+
+    <!--<input type="checkbox" id="duckSix">
+    <label for="duckSix" class="duck"></label>-->
+    
+
+    <div class ="score" id="score">
+
+    </div>
+</container>
+    <!--<label for="duckSix" class="duck">
+    </label>
+    <input type="checkbox" id="duckSix">-->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()"></span>
+            <script type = "text/javascript" src = "./scripts/game.js"></script>
+            <p class="text-center">Ron says: "Adequate job. Yes, those ducks were headless. If you have a problem with it, there's a thing called the wilderness. Go hunt there."</p>
+            <div class="text-center">
+                <button class="btn-info" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--Latest compiled Bootstrap JavaScript--> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Latest jQuery library--> <script src="https://code.jquery.com/jquery-latest.js"></script>
+</body>
+</html>

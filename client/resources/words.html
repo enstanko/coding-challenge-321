@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/words.css">
+    <title>Words From Ron</title>
+</head>
+<body onload="getQuotes()">
+    <script type="text/javascript" src="./scripts/words.js"></script>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="./index.html">VGBC</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class ="nav navbar-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./work.html">Previous Projects</a></li>
+                <li class="active"><a href="./words.html">Words From Our Founder</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./game.html">Hunt with Ron</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./help.html">Help</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <h2>Words of Wisdom</h2>
+    </div>
+    <div class="container">
+        <div>
+            <div>
+                <h3 id="quoteActual" class="quoteActual text-center"></h3>
+                <h3 class="quoteActual text-center">- Ron Swanson</h3>
+            </div>
+            <div class="row text-center">
+                <img id="ronPhoto" src="./images/ronswanson1.jpg" alt= "nope" style="Width: 400px" class="center">
+            </div>
+            <div class="row text-center">
+                <button class="btn-info" onClick="getQuotes()">New Quote from Ron</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Latest compiled Bootstrap JavaScript--> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Latest jQuery library--> <script src="https://code.jquery.com/jquery-latest.js"></script>
+</body>
+</html>

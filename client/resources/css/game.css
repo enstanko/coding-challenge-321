@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@keyframes duckfly{
+    0%{
+    left: 150%;
+    top: 10%
+    }
+    25%{
+        left: 80%;
+        top: 50%;
+    }
+    50%{
+        left: 50%;
+        top: 30%;
+    }
+    75%{
+        left: 30%;
+        top: 40%;
+    }
+    100%{
+        left: -50%;
+        top: 10%;
+    }
+}
+.try{
+    text-align: center;
+    vertical-align: middle;
+}
+input{
+    width: 100px;
+    height: 100px;
+}
+.duck{
+    width: 500px;
+    text-align: center;
+    height: 200px;
+
+    margin-left: auto;
+    
+    margin-right: auto;
+    
+    display: block;
+    
+    
+}
+input+label{
+    position: absolute;
+    left: -100px;
+    z-index: 1;
+    width: 700px;
+    height: 250px;
+    display: block;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    background: url(../images/duck2.png) no-repeat left center;
+    background-position: -138px 0;
+}
+label{
+    vertical-align: center;
+    text-align: center;
+}
+input:checked + label{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: rotate(120deg);
+    transform-origin: 60%;
+    z-index: -5;
+}
+.duck:nth-last-of-type(1){
+    animation: duckfly 10s linear 1s infinite;
+    animation-direction: alternate;
+}
+.duck:nth-last-of-type(2){
+    animation: duckfly 20s linear 2s infinite;
+    animation-direction: alternate;
+}
+.duck:nth-last-of-type(3){
+    animation: duckfly 25s linear 3s infinite;
+    animation-direction: alternate;
+}
+.duck:nth-last-of-type(4){
+    animation: duckfly 30s linear 4s infinite;
+    animation-direction: alternate;
+}
+.duck:nth-last-of-type(5){
+    animation: duckfly 50s linear 5s infinite;
+    animation-direction: alternate;
+}
+
+.score{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    background-color: #dadada;
+}
+.score:after {
+    content: counter(score);
+    display: inline-block;
+}
+.score:before {
+    content: 'Score :';
+    display: inline-block;
+    margin-right: 10px;
+}
+input:checked{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: rotate(120deg);
+    transform-origin: 60%;
+    z-index: -5;
+    counter-increment: score;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body:before{
+    content: '';
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url(../images/field.png) repeat-x bottom left;
+    background-size: cover;
+}
+.navbar{
+    z-index:5;
+}
+.modal{
+    position: fixed;
+    width: inherit;
+    max-height: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: 50px auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.submitButton{
+    margin: 20px;
+}

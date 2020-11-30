@@ -1,0 +1,14 @@
+.jumbotron{
+    background-color: lightblue;
+    color: white;
+    text-emphasis: bold;
+}
+.contactInfo{
+    vertical-align: middle;
+}
+p{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
